@@ -1,0 +1,38 @@
+#First of all create functions for all the operations you want to include in your calculator.
+#let's make it simple and create basic operations only.
+
+def Addition(num1,num2):
+     return num1+num2
+                                                       
+def Subtraction(num1,num2):
+     return num1-num2
+     
+def Multiplication(num1,num2):
+     return num1*num2
+     
+def Division(num1,num2):
+     return num1/num2
+     
+print("Select an Operation : ")
+print("+" ,"for adding")
+print("-" ,"for subtracting")
+print("*" ,"for multiplying")
+print("/" ,"for dividing")
+
+#Inputs from the User.
+
+Choice=input("select the operation :")
+
+num1=int(input("enter the first number :" ))
+num2=int(input("enter the second number :"))
+
+if Choice =="+":
+    print(num1,"+",num2,"=", Addition(num1,num2))
+elif Choice=="-":
+    print(num1,"-",num2,"=", Subtraction(num1,num2))
+elif Choice=="*":
+    print(num1,"*",num2,"=", Multiplication(num1,num2))
+elif Choice=="/":
+    print(num1,"/",num2,"=", Division(num1,num2))
+else:
+    print("Invalid Input: Try Some Other Inputs")
