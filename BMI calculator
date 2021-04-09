@@ -1,0 +1,19 @@
+**SIMPLE BMI CALCULATOR**
+
+Name=str(input("Enter your Name:"))
+print(f"Welcome {Name} we will help you calculate your BMI./n"
+      f" Please enter your Height in meters and your Weight in kilograms")
+
+Height=float(input("Kindly enter your Height in meters:"))
+Weight=float(input("kindly enter your Weight in kilograms:"))
+
+BMI=Weight/Height**2
+print("your BMI is :",BMI)
+if BMI<=18.5:
+      print("OOPS! you're under weight you're BMI is too small.")
+elif BMI>18.5 and BMI<=30:
+      print("HURRAY! you're BMI is Normal you're Fit.")
+elif BMI>30 and BMI<=40:
+      print("OOPs! You're OBESE take care of your health.")
+else:
+      print("you're extremely obese.")
